@@ -10,12 +10,21 @@
   box-sizing: inherit;
 }
 
+html,
 body {
+  height: 100%;
   // см. _typography.scss
   // указать background-color
 }
 
-h1, h2, h3, h4, h5, h6, ul, ol {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
   margin: 0;
   /* для h1-h6 можно указывать font-family */
 }
@@ -49,10 +58,14 @@ embed {
 a {
   text-decoration: none;
   color: $link-color;
-  &:visited {}
-  &:hover {}
-  &:focus {}
-  &:active{}
+  &:visited {
+  }
+  &:hover {
+  }
+  &:focus {
+  }
+  &:active {
+  }
 }
 
 button {
@@ -73,18 +86,20 @@ button {
 
 /* Base end */
 
-
 // helpers.scss
 
-
 .wrapper {
-  min-width: 100%;
+  min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 ._container {
   max-width: 1046px;
   margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
 }
 
 // .container {
@@ -108,3 +123,19 @@ button {
 //     padding: 0;
 //     border: 0;
 //   }
+
+// делает из картинки как img фактически фоновое изображение (для backend)
+// фрилансер по жизни
+
+._ibg {
+  position: relative;
+}
+
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}

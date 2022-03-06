@@ -265,7 +265,19 @@ body {
           box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6, ul, ol {
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
   margin: 0;
   /* для h1-h6 можно указывать font-family */
 }
@@ -300,13 +312,37 @@ button {
 
 /* Base end */
 .wrapper {
-  min-width: 100%;
+  min-height: 100%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 ._container {
   max-width: 1046px;
   margin: 0 auto;
+  padding: 0 15px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+._ibg {
+  position: relative;
+}
+
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header {
@@ -314,7 +350,7 @@ button {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 10;
+  z-index: 5;
 }
 
 .header__container {
@@ -327,6 +363,12 @@ button {
           align-items: center;
 }
 
+@media (max-width: 479px) {
+  .header__container {
+    min-height: 70px;
+  }
+}
+
 .header__logo {
   font-size: 24px;
   font-weight: 700;
@@ -336,9 +378,94 @@ button {
   margin-left: 133px;
 }
 
-h1 {
-  font-size: 30px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+@media (max-width: 992px) {
+  .header__menu {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__menu {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 479px) {
+  .header__menu {
+    margin-left: 20px;
+  }
+}
+
+.menu {
+  padding: 5px 0;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu__item {
+  margin-right: 21px;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__link {
+  color: #737373;
+  line-height: 171%;
+  font-weight: 600;
+}
+
+@media (max-width: 479px) {
+  .menu__link {
+    font-style: 18px;
+  }
+}
+
+.page {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.main-block {
+  position: relative;
+}
+
+.main-block__body {
+  padding: 184px 0 191px 0;
+  position: relative;
+  z-index: 2;
+  max-width: 509px;
+}
+
+.main-block__body > *:not(:last-child) {
+  margin: 0 0 35px 0;
+}
+
+.main-block__title {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 137%;
+}
+
+.main-block__text {
+  color: #737373;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.main-block__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=main.css.map */

@@ -30,7 +30,8 @@
 // @import 'layout/navigation';
 // @import 'layout/grid';
 @import 'layout/header';
-// @import 'layout/footer';
+@import 'layout/page';
+@import 'layout/footer';
 // @import 'layout/sidebar';
 // @import 'layout/forms';
 
@@ -60,9 +61,3 @@
 
 
 // start example
-
-h1 {
-    font-size: 30px;
-    font-family: $relvise-font;
-    font-weight: 700;
-}
