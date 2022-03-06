@@ -1,0 +1,22 @@
+// font: text-font, code-font(monospace)
+
+  $main-font: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  $extra-font: 'Merriweather', 'Georgia', serif;
+  $relvise-font: 'Montserrat', sans-serif;
+
+// color: main-color, extra-color, text-color
+
+  $text-color: #252b42;
+  $link-color: #252b42;
+  // $brand-color: rgb(229, 0, 80);
+  // $light-grey: rgb(237, 237, 237);
+  // $medium-grey: rgb(153, 153, 153);
+  // $dark-grey: rgb(68, 68, 68);
+
+
+// Container's maximum width
+
+$max-width: 1440px;
+
+
+// Breakpoints (указать после)

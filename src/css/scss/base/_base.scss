@@ -1,0 +1,110 @@
+/* Base start */
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  // см. _typography.scss
+  // указать background-color
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol {
+  margin: 0;
+  /* для h1-h6 можно указывать font-family */
+}
+
+ul,
+ol,
+li {
+  // убираем для nav
+  // смотри ещё margin and padding + для ol
+  list-style: none;
+  padding: 0;
+}
+
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+// img {display: block; height: auto}
+
+// Синюю рамку (a, input, button) убираем при помощи задания outline: none (но её иногда нужно выделять)
+
+:focus,
+:active {
+  outline: none;
+}
+
+// Порядок применения певдоэлементов (можно и для btn): a:link, a:visited, a:hover, a:focus, a:active
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  &:visited {}
+  &:hover {}
+  &:focus {}
+  &:active{}
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent; // none
+  // border: none; убирает рамку
+  // border: 1px solid transparent; убирает рамку
+  // min-width: 35px; лучше задавать
+  // padding: 0.5em 1em; лучше задавать
+  // color: inherit;
+}
+
+// Стилевое оформление всех полей ввода текста, кроме флажков и переключателей
+// input:not([type=checkbox]):not([type=radio]) {  display: block; width: 100%;}
+// В блочные => они выводятся каждый на своей строке (если нужно). Ширина нужна, т.к. у input она определяется атрибутом size. Если нужна определённая, то указывается в CSS при помощи width.
+
+// Цвет текста для подсказки input::placeholder {color:___;}
+
+/* Base end */
+
+
+// helpers.scss
+
+
+.wrapper {
+  min-width: 100%;
+  overflow: hidden;
+}
+
+._container {
+  max-width: 1046px;
+  margin: 0 auto;
+}
+
+// .container {
+//   max-width: $max-width;
+//   margin: 0 auto;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   width: 100%; // ?
+// }
+
+// скрытие h1
+
+// .visuallyhidden {
+//     position: absolute;
+//     clip: rect(1px, 1px, 1px, 1px);
+//     -webkit-clip-path: inset(0px 0px 99.9% 9999.9%);
+//     clip-path: inset(0px 0px 99.9% 99.9%);
+//     overflow: hidden;
+//     height: 1px;
+//     width: 1px;
+//     padding: 0;
+//     border: 0;
+//   }

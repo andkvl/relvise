@@ -1,0 +1,28 @@
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+.header__container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+.header__menu {
+    margin-left: 133px;
+}
+.menu {
+}
+.menu__list {
+}
+.menu__item {
+}
+.menu__link {
+}
