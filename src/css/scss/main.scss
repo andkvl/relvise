@@ -17,8 +17,8 @@
 // 3. Base
 // Общие шаблоны проекта, стандартные стили, типографские правила.
 
-@import 'base/typography';
-@import 'base/base';
+@import "base/typography";
+@import "base/base";
 
 // 4. Layout
 // elements ???
@@ -29,9 +29,12 @@
 
 // @import 'layout/navigation';
 // @import 'layout/grid';
-@import 'layout/header';
-@import 'layout/page';
-@import 'layout/footer';
+@import "layout/header";
+@import "layout/page";
+@import "layout/main-block";
+@import "layout/services";
+
+@import "layout/footer";
 // @import 'layout/sidebar';
 // @import 'layout/forms';
 
@@ -42,7 +45,7 @@
 
 // buttons, carousel, cover, dropdown, media, thumbnails, etc.
 
-// @import "components/buttons";
+@import "components/buttons";
 
 // 6. Pages
 // Если есть стили, зависящие от страницы, то лучше положить их в отдельный файл.
@@ -57,7 +60,5 @@
 // default, admin, dark, etc.
 
 // @import "themes/dark.scss";
-
-
 
 // start example
