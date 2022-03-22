@@ -11,6 +11,9 @@
   @media (max-width: 992px) {
     padding: 120px 0 191px 0;
   }
+  @media (max-width: 479px) {
+    padding: 115px 0 160px 0;
+  }
 }
 .main-block__body > *:not(:last-child) {
   margin: 0 0 35px 0;
