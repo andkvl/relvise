@@ -843,6 +843,32 @@ button {
   display: block;
 }
 
+.whoweare {
+  padding: 80px 0 130px 0;
+}
+
+.whoweare__header {
+  margin-bottom: 100px;
+}
+
+.whoweare__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.whoweare__video {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 57%;
+          flex: 0 0 57%;
+}
+
+.whoweare__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 .footer {
   background-color: #63880c;
 }
