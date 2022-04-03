@@ -14,3 +14,12 @@
 }
 .page__whoweare {
 }
+.page__clients {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.page__subscribe {
+}
+.page__getintouch {
+}
