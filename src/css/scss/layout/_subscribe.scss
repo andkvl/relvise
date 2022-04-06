@@ -79,6 +79,10 @@
   text-align: center;
   color: #ffffff;
   padding: 0 22px;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: darken(#ff7b47, 10%);
+  }
   @media (max-width: 810px) {
     padding: 0px 15px;
   }

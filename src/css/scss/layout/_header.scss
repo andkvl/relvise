@@ -49,10 +49,10 @@
   color: #737373;
   line-height: 171%;
   font-weight: 600;
-  @media (max-width: 479px) {
-    font-style: 18px;
-  }
   &:hover {
     text-decoration: underline;
+  }
+  @media (max-width: 479px) {
+    font-style: 18px;
   }
 }

@@ -12,6 +12,7 @@
   padding: 5px 36px;
   text-align: center;
   margin: 10px 0;
+  transition: all 0.3s ease 0s;
   @media (max-width: 479px) {
     flex: 1 1 100%;
   }
@@ -24,8 +25,16 @@
 .main-block__button_orange {
   background: #ff7b47;
   color: #ffffff;
+  &:hover {
+    background: #ffffff;
+    color: #ff7b47;
+  }
 }
 .main-block__button_border {
   color: #0d5c63;
   border: 1px solid #0d5c63;
+  &:hover {
+    background: #0d5c63;
+    color: #ffffff;
+  }
 }
