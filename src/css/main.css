@@ -1510,15 +1510,15 @@ button {
 }
 
 .contacts-footer__item_phone {
-  background: url(/src/images/footer/icons/01.svg) 0 0 no-repeat;
+  background: url(../../src/images/footer/icons/01.svg) 0 0 no-repeat;
 }
 
 .contacts-footer__item_map {
-  background: url(/src/images/footer/icons/02.svg) 0 0 no-repeat;
+  background: url(../../src/images/footer/icons/02.svg) 0 0 no-repeat;
 }
 
 .contacts-footer__item_email {
-  background: url(/src/images/footer/icons/03.svg) 0 0 no-repeat;
+  background: url(../../src/images/footer/icons/03.svg) 0 0 no-repeat;
 }
 
 .footer__bottom {
